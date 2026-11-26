@@ -1,0 +1,51 @@
+{
+  "results": {
+    "Training": {
+      "loss": 0.22296835935582496,
+      "iou": 0.8394459382127168,
+      "dice": 0.9127160747418953
+    },
+    "Validation": {
+      "loss": 0.2339594473272054,
+      "iou": 0.8377831941057021,
+      "dice": 0.9117323488349585
+    }
+  },
+  "best_epoch": 37,
+  "patches": {
+    "train": {
+      "kept": 9413,
+      "skipped_nodata": 0,
+      "skipped_low_flood": 192
+    },
+    "val": {
+      "kept": 1994,
+      "skipped_nodata": 0,
+      "skipped_low_flood": 70
+    }
+  },
+  "band_mean": [
+    -12.397228240966797,
+    -19.9472713470459,
+    -8.571083068847656,
+    -14.887088775634766
+  ],
+  "band_std": [
+    2.677959442138672,
+    2.9298722743988037,
+    3.5819804668426514,
+    3.474635124206543
+  ],
+  "settings": {
+    "model": "AttentionUNet",
+    "model_args": {
+      "in_channels": 4,
+      "base": 32
+    },
+    "epochs": 40,
+    "batch_size": 64,
+    "lr": 0.001,
+    "min_valid_frac": 0.8,
+    "min_flood_frac": 0.05
+  }
+}

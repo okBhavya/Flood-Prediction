@@ -1,0 +1,34 @@
+# ==============================================================================
+# Large Sentinel-1 Full-Scene SAR GeoTIFFs (~1.74 - 1.87 GiB per band)
+# Excluded to stay under GitHub's 100 MB per-file hard limit.
+# All 64x64 dataset patches, cleaned binary flood masks, trained PyTorch
+# weights (.pth), notebooks, output maps, and PDF reports ARE tracked.
+# ==============================================================================
+Team_26/Chhatarpur/Before/
+Team_26/Chhatarpur/After/
+Team_26/2026_Flood_Project/**/Before/
+Team_26/2026_Flood_Project/**/After/
+Gamma0_VV.tif
+Gamma0_VH.tif
+*_VV_dB.tif
+*_VH_dB.tif
+*.SAFE/
+*.SAFE.zip
+target.dim
+target.data/
+_chhatarpur_work/
+
+# Python / Jupyter / Environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# OS / Temporary artifacts
+.DS_Store
+._*
+Thumbs.db
+*.tmp
+*.log

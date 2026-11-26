@@ -1,0 +1,52 @@
+{
+  "results": {
+    "Training": {
+      "loss": 0.10656137230382179,
+      "iou": 0.912060448604194,
+      "dice": 0.954007964831864
+    },
+    "Validation": {
+      "loss": 0.11614836617954287,
+      "iou": 0.8998615165211411,
+      "dice": 0.947291693311298
+    }
+  },
+  "best_epoch": 24,
+  "patches": {
+    "train": {
+      "kept": 3722,
+      "skipped_nodata": 0,
+      "skipped_low_flood": 0
+    },
+    "val": {
+      "kept": 809,
+      "skipped_nodata": 0,
+      "skipped_low_flood": 0
+    }
+  },
+  "band_mean": [
+    -11.696751594543457,
+    -20.130842208862305,
+    -11.513496398925781,
+    -14.494726181030273
+  ],
+  "band_std": [
+    3.6184864044189453,
+    4.514472484588623,
+    5.037868022918701,
+    4.303252220153809
+  ],
+  "settings": {
+    "model": "AttentionUNet",
+    "model_args": {
+      "in_channels": 4,
+      "base": 32
+    },
+    "epochs": 25,
+    "batch_size": 64,
+    "lr": 0.001,
+    "min_valid_frac": 0.8,
+    "min_flood_frac": 0.05,
+    "district": "Chhatarpur"
+  }
+}

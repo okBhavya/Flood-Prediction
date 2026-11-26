@@ -1,0 +1,51 @@
+{
+  "results": {
+    "Training": {
+      "loss": 0.1868031223500298,
+      "iou": 0.8900295782551636,
+      "dice": 0.941815502249251
+    },
+    "Validation": {
+      "loss": 0.19058576752942147,
+      "iou": 0.8829189768759268,
+      "dice": 0.9378194045723998
+    }
+  },
+  "best_epoch": 49,
+  "patches": {
+    "train": {
+      "kept": 3464,
+      "skipped_nodata": 2,
+      "skipped_low_flood": 180
+    },
+    "val": {
+      "kept": 447,
+      "skipped_nodata": 0,
+      "skipped_low_flood": 23
+    }
+  },
+  "band_mean": [
+    -9.854788780212402,
+    -16.353675842285156,
+    -7.26931095123291,
+    -13.542409896850586
+  ],
+  "band_std": [
+    4.183102130889893,
+    3.2512195110321045,
+    2.8178064823150635,
+    2.4594013690948486
+  ],
+  "settings": {
+    "model": "UNet",
+    "model_args": {
+      "in_channels": 4,
+      "base": 32
+    },
+    "epochs": 50,
+    "batch_size": 32,
+    "lr": 0.001,
+    "min_valid_frac": 0.8,
+    "min_flood_frac": 0.05
+  }
+}
